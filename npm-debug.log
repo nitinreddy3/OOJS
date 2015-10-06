@@ -1,0 +1,86 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'xto6' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'xto6', null ]
+7 verbose cache add spec xto6
+8 silly cache add parsed spec { raw: 'xto6',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'xto6',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed xto6@*
+10 verbose addNamed "*" is a valid semver range for xto6
+11 silly addNameRange { name: 'xto6', range: '*', hasData: false }
+12 silly mapToRegistry name xto6
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/xto6
+16 verbose addNameRange registry:https://registry.npmjs.org/xto6 not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/xto6
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 2:03:31 PM
+20 verbose request id 4f1e217b7a921ea4
+21 verbose etag "2NMPP3X5KGZLCG7YCPLHD25DN"
+22 http request GET https://registry.npmjs.org/xto6
+23 http 304 https://registry.npmjs.org/xto6
+24 silly get cb [ 304,
+24 silly get   { date: 'Tue, 06 Oct 2015 08:33:32 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     etag: '"2NMPP3X5KGZLCG7YCPLHD25DN"',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-fra1248-FRA',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '1',
+24 silly get     'x-timer': 'S1444120412.999338,VS0,VE686',
+24 silly get     vary: 'Accept' } ]
+25 verbose etag https://registry.npmjs.org/xto6 from cache
+26 verbose get saving xto6 to /home/nitin/.npm/registry.npmjs.org/xto6/.cache.json
+27 silly addNameRange number 2 { name: 'xto6', range: '*', hasData: true }
+28 silly addNameRange versions [ 'xto6',
+28 silly addNameRange   [ '1.0.0-alpha',
+28 silly addNameRange     '1.0.1-alpha',
+28 silly addNameRange     '1.0.2-alpha',
+28 silly addNameRange     '1.0.3-alpha',
+28 silly addNameRange     '1.0.4-alpha',
+28 silly addNameRange     '1.0.5-alpha',
+28 silly addNameRange     '1.0.6-alpha',
+28 silly addNameRange     '1.0.7-alpha',
+28 silly addNameRange     '1.1.0-alpha',
+28 silly addNameRange     '1.1.1-alpha',
+28 silly addNameRange     '1.1.2-alpha' ] ]
+29 verbose stack Error: No compatible version found: xto6@'*'
+29 verbose stack Valid install targets:
+29 verbose stack ["1.0.0-alpha","1.0.1-alpha","1.0.2-alpha","1.0.3-alpha","1.0.4-alpha","1.0.5-alpha","1.0.6-alpha","1.0.7-alpha","1.1.0-alpha","1.1.1-alpha","1.1.2-alpha"]
+29 verbose stack
+29 verbose stack     at installTargetsError (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:274:12)
+29 verbose stack     at next (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:253:17)
+29 verbose stack     at setData (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:230:5)
+29 verbose stack     at RES (/usr/local/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+29 verbose stack     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:17:25)
+29 verbose stack     at fixName (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:29:5)
+29 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:173:7)
+29 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+30 verbose cwd /home/nitin/Project/OOJS
+31 error Linux 3.13.0-62-generic
+32 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "xto6"
+33 error node v0.12.7
+34 error npm  v2.11.3
+35 error code ETARGET
+36 error notarget No compatible version found: xto6@'*'
+36 error notarget Valid install targets:
+36 error notarget ["1.0.0-alpha","1.0.1-alpha","1.0.2-alpha","1.0.3-alpha","1.0.4-alpha","1.0.5-alpha","1.0.6-alpha","1.0.7-alpha","1.1.0-alpha","1.1.1-alpha","1.1.2-alpha"]
+36 error notarget
+36 error notarget This is most likely not a problem with npm itself.
+36 error notarget In most cases you or one of your dependencies are requesting
+36 error notarget a package version that doesn't exist.
+37 verbose exit [ 1, true ]
